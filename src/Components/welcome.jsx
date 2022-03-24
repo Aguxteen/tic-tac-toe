@@ -21,12 +21,12 @@ export default function Welcome(){
             <br/>
 
             <div>
-                <a target="_blank" href='https://pedro-peyon-portafolio.vercel.app/'><button className='buttton'>Front code</button></a>
+                <a target="_blank" href='https://github.com/Aguxteen/tic-tac-toe'><button className='buttton'>Front code</button></a>
                 <a target="_blank" href='https://github.com/Aguxteen/tic-tac-toe-server'><button className='buttton'>Back code</button></a>
             </div>
             <div>
-
-                <a target="_blank" href='https://github.com/Aguxteen/tic-tac-toe'><button className='buttton'>Creator</button></a>
+            
+                <a target="_blank" href='https://pedro-peyon-portafolio.vercel.app/'><button className='buttton'>Creator</button></a>
             </div>
 
             
