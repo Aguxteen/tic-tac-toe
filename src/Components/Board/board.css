@@ -1,0 +1,11 @@
+.board{
+  border: 3px solid white;
+  padding: 1rem;
+  border-radius: 2rem;
+    display:flex;
+    flex-direction: column;
+  }
+  .row{
+    display:flex;
+  }
+  
