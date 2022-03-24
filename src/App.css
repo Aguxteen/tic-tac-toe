@@ -36,3 +36,19 @@
 .roomButton{
   width: 300px;
 }
+.divButtons{
+  
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  
+}
+
+.buttton{
+  width: 7rem;
+  margin: 3px;
+}
+.butttonA{
+  width: 12rem;
+
+}
