@@ -12,12 +12,11 @@ export const disconnectSocket = () => {
   if(socket) socket.disconnect();
 }
 
-export const leaveAllSockets = (cb,cb2,cb3) => {
+export const leaveAllSockets = (cb,cb2) => {
   socket.on("all-leave", ()=>{
 
      cb("Selection")
      cb2(true)
-     cb3(true)
   })
 }
 

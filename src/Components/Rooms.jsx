@@ -58,7 +58,6 @@ const Rooms = ()=>{
     const [render, setRender] = useState(true)
     const [winningSquares, setWinningSquares] = useState([])
 
-
     const reset = (a)=>{
         setTurn("X")
         setSquares(Array(9).fill(null))
@@ -128,7 +127,7 @@ const Rooms = ()=>{
         })
         subscribeToChat(passGameData);
         makePlay(room, squares)
-        leaveAllSockets(setRoom, setMessage, reset)
+        leaveAllSockets(setRoom, setMessage)
         
         
         return () => {
@@ -150,12 +149,12 @@ const Rooms = ()=>{
             {room==="Selection" &&
             <div className='roomsDiv'>
                 <h3>Available rooms</h3>
-                {rooms["A"].players<2 && <button className='roomButton' onClick={() => setRoom("A")} key={"A"}> A  Players:{rooms["A"].players}/2 </button>}
-                {rooms["B"].players<2 && <button className='roomButton' onClick={() => setRoom("B")} key={"B"}> B  Players:{rooms["B"].players}/2 </button>}
-                {rooms["C"].players<2 && <button className='roomButton' onClick={() => setRoom("C")} key={"C"}> C  Players:{rooms["C"].players}/2 </button>}
-                {rooms["D"].players<2 && <button className='roomButton' onClick={() => setRoom("D")} key={"D"}> D  Players:{rooms["D"].players}/2 </button>}
-                {rooms["E"].players<2 && <button className='roomButton' onClick={() => setRoom("E")} key={"E"}> E  Players:{rooms["E"].players}/2 </button>}
-                {rooms["F"].players<2 && <button className='roomButton' onClick={() => setRoom("F")} key={"F"}> F  Players:{rooms["F"].players}/2 </button>}
+                {rooms["A"].players<2 && <button className='roomButton' onClick={() => {setRoom("A"); reset(true)}} key={"A"}> A  Players:{rooms["A"].players}/2 </button>}
+                {rooms["B"].players<2 && <button className='roomButton' onClick={() => {setRoom("B"); reset(true)}} key={"B"}> B  Players:{rooms["B"].players}/2 </button>}
+                {rooms["C"].players<2 && <button className='roomButton' onClick={() => {setRoom("C"); reset(true)}} key={"C"}> C  Players:{rooms["C"].players}/2 </button>}
+                {rooms["D"].players<2 && <button className='roomButton' onClick={() => {setRoom("D"); reset(true)}} key={"D"}> D  Players:{rooms["D"].players}/2 </button>}
+                {rooms["E"].players<2 && <button className='roomButton' onClick={() => {setRoom("E"); reset(true)}} key={"E"}> E  Players:{rooms["E"].players}/2 </button>}
+                {rooms["F"].players<2 && <button className='roomButton' onClick={() => {setRoom("F"); reset(true)}} key={"F"}> F  Players:{rooms["F"].players}/2 </button>}
                 
                 
             </div>

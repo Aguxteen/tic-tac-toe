@@ -14,9 +14,6 @@ function App() {
      <Route path="/offline" element={<TicTacToe/>} />
      <Route path="/online" element={<Rooms />} />
 
-
-
-       
      </Routes>
     </div>
     </BrowserRouter>
