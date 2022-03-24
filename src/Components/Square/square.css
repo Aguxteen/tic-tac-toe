@@ -47,16 +47,21 @@
 } */
 
 .square--O.winner{
-    animation: O-Winner infinite .4s ease-in-out
+    animation: O-Winner infinite .9s ease-in-out
 }
 @keyframes O-Winner{
     0%{
+        transform: rotate(0deg);
         border-radius: 50%;
     }
     50%{
         border-radius: 40%;
     }
+    85%{
+        transform: rotate(-350deg)
+    }
     100%{
+        transform: rotate(-360deg);
         border-radius: 50%;
     }
 }

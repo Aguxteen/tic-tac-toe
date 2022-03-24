@@ -16,9 +16,17 @@ button{
   font-weight: 600;
   font-size: 1rem;
   border-radius: 2px;
-
+  cursor: pointer;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a{
+  text-decoration: none;
+  text-decoration: underline;
+    color: #A8DADC ;
+}
+.link{
+  text-decoration: none;
 }
