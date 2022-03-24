@@ -128,7 +128,7 @@ const Rooms = ()=>{
         })
         subscribeToChat(passGameData);
         makePlay(room, squares)
-        leaveAllSockets(setRoom, setMessage, reset(true))
+        leaveAllSockets(setRoom, setMessage, reset)
         
         
         return () => {
