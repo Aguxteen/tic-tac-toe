@@ -13,8 +13,10 @@ export default function Welcome(){
                     <Link className='link' to="/offline"><button className='buttton'>Offline</button></Link>
                     <Link className='link' to="/online" ><button className='buttton'>Online</button></Link>
                 </div>
-            
-            <Link className='link' to="/"       ><button className='butttonA'>Instructions</button></Link>
+                <div>
+
+                <Link className='link' to="/instructions"><button className='butttonA'>Instructions</button></Link>
+                </div>
             <br/>
             <br/>
 
@@ -22,7 +24,10 @@ export default function Welcome(){
                 <a target="_blank" href='https://pedro-peyon-portafolio.vercel.app/'><button className='buttton'>Front code</button></a>
                 <a target="_blank" href='https://github.com/Aguxteen/tic-tac-toe-server'><button className='buttton'>Back code</button></a>
             </div>
+            <div>
+
                 <a target="_blank" href='https://github.com/Aguxteen/tic-tac-toe'><button className='buttton'>Creator</button></a>
+            </div>
 
             
 
